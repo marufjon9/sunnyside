@@ -1,0 +1,23 @@
+@font-face {
+  font-display: swap;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/Barlow-SemiBold.woff2") format("woff2"),
+    url("/fonts/Barlow-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "fraunces-9pt-black";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/fraunces-9pt-black.woff2") format("woff2"),
+    url("/fonts/fraunces-9pt-black.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "fraunces-9pt-72pt";
+  font-style: normal;
+  src: url("/fonts/Fraunces_72pt_Soft-Bold.woff2") format("woff2"),
+    url("/fonts/Fraunces_72pt_Soft-Bold.woff") format("woff");
+}

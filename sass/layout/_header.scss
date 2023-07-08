@@ -1,0 +1,103 @@
+.main {
+}
+.main__header {
+  height: 75vh;
+  background-image: url("/img/orange@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header {
+  padding-top: 32px;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 58px;
+}
+
+.logo {
+}
+.logo__img {
+  max-width: 124px;
+}
+.header__navbar {
+  display: none;
+}
+.header__list {
+  display: flex;
+  gap: 25px;
+}
+.header__item {
+}
+.link {
+}
+.header__link {
+}
+.contact {
+  color: var(--main-textcolor);
+  font-family: "fraunces-9pt-72pt";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.107px;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border-radius: 28px;
+  background-color: #fff;
+  &:hover {
+    color: var(--main-white);
+    // opacity: 0.5;
+  }
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--main-white);
+  border-radius: 1.5px;
+}
+
+.header__inner {
+  text-align: center;
+}
+.header__title {
+  color: var(--main-white);
+  font-family: "fraunces-9pt-72pt";
+  font-size: 35px;
+  line-height: normal;
+  letter-spacing: 6.25px;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 375px) {
+  .header__wrapper {
+    margin-bottom: 88px;
+  }
+  .header__title {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 575px) {
+  .header__navbar {
+    display: block;
+  }
+  .hamburger {
+    display: none;
+  }
+  .header__list {
+  }
+}
+@media only screen and (min-width: 768px) {
+  .logo__img {
+    max-width: 170px;
+  }
+}
