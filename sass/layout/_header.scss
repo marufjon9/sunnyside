@@ -7,6 +7,17 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .main__header {
+    background-image: url("/img/orange@2x.png");
+  }
+}
+
 .header {
   padding-top: 32px;
 }
@@ -28,6 +39,7 @@
 .header__list {
   display: flex;
   gap: 25px;
+  align-items: center;
 }
 .header__item {
 }
@@ -35,22 +47,28 @@
 }
 .header__link {
 }
+.btn {
+  border-radius: 28px;
+  padding: 15px 30px;
+  background-color: var(--main-white);
+  transition: 0.4s ease;
+  &:hover {
+    background-color: var(--btn-hover);
+    .contact {
+      color: var(--main-white);
+    }
+  }
+}
+
 .contact {
   color: var(--main-textcolor);
   font-family: "fraunces-9pt-72pt";
   font-size: 15px;
-  font-weight: 700;
   line-height: 25px;
   letter-spacing: -0.107px;
-  text-transform: uppercase;
-  padding: 15px 30px;
-  border-radius: 28px;
-  background-color: #fff;
-  &:hover {
-    color: var(--main-white);
-    // opacity: 0.5;
-  }
+  transition: 0.4s ease;
 }
+
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -87,6 +105,19 @@
 }
 
 @media only screen and (min-width: 575px) {
+  .main__header {
+    background-image: url("/img/orange-big@1x.png");
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    .main__header {
+      background-image: url("/img/orange-big@2x.png");
+    }
+  }
   .header__navbar {
     display: block;
   }
@@ -99,5 +130,12 @@
 @media only screen and (min-width: 768px) {
   .logo__img {
     max-width: 170px;
+  }
+  .header__wrapper {
+    margin-bottom: 105px;
+  }
+  .header__title {
+    font-size: 56px;
+    letter-spacing: 8.75px;
   }
 }

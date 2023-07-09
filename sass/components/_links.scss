@@ -5,6 +5,12 @@
   line-height: 25px;
   letter-spacing: -0.129px;
   text-decoration: none;
-  // &:hover {
-  // }
+  transition: 0.4s ease;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.btn:hover .link {
+  opacity: unset;
 }
