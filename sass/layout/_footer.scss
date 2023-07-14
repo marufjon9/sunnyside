@@ -1,0 +1,46 @@
+.footer {
+  background-color: var(--footer-bg);
+}
+
+.footer__wrapper {
+  padding-top: 64px;
+  padding-bottom: 80px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.footer__logo-img {
+  display: block;
+  margin: 0 auto;
+}
+.footer__list {
+  margin-top: 40px;
+  margin-bottom: 88px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__item {
+  color: var(--link-color);
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.129px;
+  transition: 0.4s ease;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+  }
+}
+.footer__icon-list {
+  max-width: 164px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+x #america {
+  fill: #2c7566;
+  transition: 0.4s ease;
+}
+
+.icon__img:hover path {
+  fill: #fff;
+}

@@ -1,0 +1,196 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 312px 1fr 312px 1fr 600px 600px;
+}
+
+.grid__item {
+  &:nth-child(1) {
+    background-image: url("/img/egg@1x.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &:nth-child(3) {
+    background-image: url("/img/glass@1x.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &:nth-child(5) {
+    background-image: url("/img/cherry@1x.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &:nth-child(6) {
+    background-image: url("/img/tangerine@1x.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .grid__item {
+    &:nth-child(1) {
+      background-image: url("/img/egg@2x.png");
+    }
+    &:nth-child(2) {
+      background-image: url("/img/glass@2x.png");
+    }
+    &:nth-child(5) {
+      background-image: url("/img/cherry@2x.png");
+    }
+    &:nth-child(6) {
+      background-image: url("/img/tangerine@2x.png");
+    }
+  }
+}
+
+.grid__wrapper {
+  text-align: center;
+  padding: 64px 0;
+  max-width: 445px;
+  margin: 0 auto;
+}
+.item__title {
+  color: var(--main-textcolor);
+  font-family: "fraunces-9pt-black";
+  font-size: 28px;
+  line-height: normal;
+  letter-spacing: -0.129px;
+  margin-bottom: 18px;
+}
+.item__text {
+  color: var(--secondary-textcolor);
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: -0.029px;
+  margin-bottom: 24px;
+}
+.grid__link {
+  color: var(--main-textcolor);
+  font-family: "fraunces-9pt-black";
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.item__line {
+  width: 130px;
+  display: block;
+  border-bottom: 10px solid var(--border-bottom);
+  margin: -12px auto;
+  border-radius: 28px;
+  opacity: 0.25;
+}
+.grid__inner {
+  padding: 398px 0 59px 0;
+  text-align: center;
+  max-width: 339px;
+  margin: 0 auto;
+}
+.grid__item:nth-child(4) {
+  .item__line {
+    border-bottom: 10px solid var(--second-border);
+  }
+}
+.item__heading {
+  color: var(--third-textcolor);
+  font-family: "fraunces-9pt-black";
+  font-size: 26px;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  margin-bottom: 24px;
+  opacity: 0.75;
+}
+.item__content {
+  color: var(--third-textcolor);
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: -0.114px;
+}
+
+.grid__item:nth-child(6) {
+  .item__heading {
+    color: var(--fourth-textcolor);
+  }
+  .item__content {
+    color: var(--fifth-textcolor);
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .grid__wrapper {
+    padding: 64px 0;
+  }
+  .item__title {
+    font-size: 32px;
+    letter-spacing: -0.229px;
+    margin-bottom: 24px;
+  }
+  .item__text {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.129px;
+    margin-bottom: 32px;
+  }
+  .grid__link {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+
+  .item__heading {
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin-bottom: 27px;
+  }
+  .item__content {
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: -0.114px;
+  }
+}
+
+@media only screen and (min-width: 575px) {
+  .grid__wrapper {
+    text-align: left;
+  }
+  .item__line {
+    margin: 0;
+    margin-top: -12px;
+  }
+}
+
+@media only screen and (min-width: 675px) {
+  .grid__item:nth-child(2) {
+    order: -1;
+  }
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 600px);
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .grid__wrapper {
+    padding: 158px 0;
+  }
+  .item__title {
+    font-size: 40px;
+    margin-bottom: 32px;
+  }
+  .item__text {
+    margin-bottom: 40px;
+  }
+  .item__line {
+    width: 119px;
+
+    opacity: 1;
+  }
+}

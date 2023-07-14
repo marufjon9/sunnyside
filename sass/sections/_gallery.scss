@@ -1,0 +1,11 @@
+.gallery__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .gallery__box {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

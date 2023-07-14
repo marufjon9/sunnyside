@@ -1,0 +1,131 @@
+.testimonials {
+  text-align: center;
+  margin-top: 64px;
+  margin-bottom: 86px;
+}
+.testimonials__title {
+  color: var(--heading-color);
+  font-family: "fraunces-9pt-black";
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 4px;
+  margin-bottom: 64px;
+}
+.card__box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 64px;
+}
+.card__item {
+  text-align: center;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card__text {
+  color: var(--testimonial-color);
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.129px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__item:nth-of-type(1) .card__text::before {
+  content: "";
+  background-image: url("/img/emily@1x.png");
+  width: 72px;
+  height: 72px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  margin-bottom: 24px;
+}
+.card__item:nth-of-type(2) .card__text::before {
+  content: "";
+  background-image: url("/img/thomas@1x.png");
+  width: 72px;
+  height: 72px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  margin-bottom: 24px;
+}
+.card__item:nth-of-type(3) .card__text::before {
+  content: "";
+  background-image: url("/img/jenny@1x.png");
+  width: 72px;
+  height: 72px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  margin-bottom: 24px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .card__item:nth-of-type(1) .card__text::before {
+    background-image: url("/img/emily@2x.png");
+  }
+  .card__item:nth-of-type(2) .card__text::before {
+    background-image: url("/img/thomas@2x.png");
+  }
+  .card__item:nth-of-type(3) .card__text::before {
+    background-image: url("/img/jenny@2x.png");
+  }
+}
+
+.textbox__author {
+  color: var(--main-textcolor);
+  font-family: "fraunces-9pt-black";
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.129px;
+  margin-bottom: 7px;
+}
+.textbox__position {
+  color: var(--heading-color);
+  font-size: 12px;
+  line-height: 20px; /* 178.571% */
+  letter-spacing: -0.1px;
+}
+
+@media only screen and (min-width: 375px) {
+  .testimonials__title {
+    font-size: 16px;
+  }
+  .card__text {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 32px;
+  }
+  .textbox__author {
+    font-size: 18px;
+    margin-bottom: 9px;
+  }
+  .textbox__position {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .testimonials {
+    margin: 160px 0;
+  }
+}
+
+@media only screen and (min-width: 976px) {
+  .card__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
