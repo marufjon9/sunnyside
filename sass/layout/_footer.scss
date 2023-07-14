@@ -12,6 +12,10 @@
 .footer__logo-img {
   display: block;
   margin: 0 auto;
+  fill: #2c7566;
+  &:hover {
+    fill: #fff;
+  }
 }
 .footer__list {
   margin-top: 40px;
